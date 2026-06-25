@@ -1297,65 +1297,236 @@ const SUBJECTS = {
     icon:'🔌', title:'Linear Integrated Circuits (EC8453)',
     desc:'Study of op-amps, timer circuits, voltage regulators, D/A and A/D converters, and practical IC applications.',
     units:[
-      { title:'Unit 1 – Basics of Operational Amplifiers', resources:[
-        {name:'Op-Amp Fundamentals', type:'PDF'},
-        {name:'Op-Amp Characteristics', type:'PDF'},
-        {name:'Assignment 1', type:'DOC'},
-        {name:'Video – Op-Amp Basics', type:'VIDEO'}
+      { title:'Unit 1 – Basics of Operational Amplifier', resources:[
+        {title:'Introduction', files: [{type:'PDF', url: "https://drive.google.com/file/d/1tpD1tqPmHrrdb1RxrcMqnFm_s53Ma9q-/view"}]},
+        {title:'Basic Current Source', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1VCk2KcGhM3w_KwwajTMqn_mqv6hyicDp/view"}, 
+          {type:'Demo', url: "https://everycircuit.com/circuit/4572369301667840/current-source"}
+        ]},
+        {title:'Wilder Current Source', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1HWlWp6oMXbZRFcbxOi0RULnnjbeZCKP8/view"}, 
+          {type:'Demo', url: "https://everycircuit.com/circuit/6094371456548864/wilder-current-source"}
+        ]},
+        {title:'Multiple /  Current Repeater Source', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/14wz83vXdYXNuJ65jHvwE05BaTHz-oXyj/view"}, 
+          {type:'Demo', url: "https://everycircuit.com/circuit/5167764642463744/current-repeater"}
+        ]},
+        {title:'Wilson Current Source', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1Kcl6GdPvr73_fDgpzuDRmsWppDwJVciV/view"}, 
+          {type:'Demo', url: "https://everycircuit.com/circuit/5127296923729920/wilson-current-source"}
+        ]},
+        {title:'Voltage Sources', files: [{type:'PDF', url: "https://drive.google.com/file/d/1nKQT7kXQZITozdvBFwddY2Z7YmqnhnWR/view"}]},
+        {title:'Voltage References', files: [{type:'PDF', url: "https://drive.google.com/file/d/13hBiTCbEnI0FC2lokAzYYpGfJazoGpY3/view"}]},
+        {title:'Basic Information and Ideal OPAMP', files: [{type:'PDF', url: "https://drive.google.com/file/d/13mm4ueAYv3EfYdqkp_I2rxoFzzQB4RKw/view"}]},
+        {title:'Internal Circuit Diagram of OPAMP', files: [{type:'PDF', url: "https://drive.google.com/file/d/1y_JionyLw7PkQSiaXv_ZL2bNUwSGgU9u/view"}]},
+        {title:'DC & AC Performance Characteristics', files: [{type:'PDF', url: "https://drive.google.com/file/d/1wdUuf51u8v4fZTAa7dRaLgI4NqmHnqyR/view"}]},
+        {title:'Full Notes', files: [{type:'PDF', url: "https://drive.google.com/file/d/1uQrcFwwLueNaj1nQJKQpWUy4lCfDedMB/view"}]},
+        {title:'Differential Amplifier with Load (notes)', files: [{type:'PDF', url: "https://drive.google.com/file/d/1-NKNaEs0yRW94Q2QiuYDa6JrYlVwgtTM/view"}]},
+        {title:'JFET Operational Amplifier (notes)', files: [{type:'PDF', url: "https://drive.google.com/file/d/1IDa1CtPKWVNGs9dNZx4z4sAqJmqTXv_f/view"}]},
+        {title:'2 marks with Answers', files: [{type:'PDF', url: "https://drive.google.com/file/d/1aMjvzqTezm6PSPv_fJqiTdTdXwtEqU7R/view"}]},
+        {title:'Question Bank', files: [{type:'PDF', url: "https://drive.google.com/file/d/1X-2pZ-hHxXYuAQA4VyVdz71BhMK07ZDQ/view"}]},
       ]},
-      { title:'Unit 2 – Applications of Op-Amp', resources:[
-        {name:'Linear Applications', type:'PDF'},
-        {name:'Non-linear Applications', type:'PDF'},
-        {name:'Assignment 2', type:'DOC'}
+      { title:'Unit 2 – Applications of Operational Amplifier', resources:[
+        {name:'Sign Changer, Scale Changer, Phase Shift Circuits, Voltage Follower', type:'PDF', url: "https://drive.google.com/file/d/11Cx-uF2Pvp65uf2rVyeXmMRQFxoBI7v0/view"},
+        {name:'V to I and I to V Converter', type:'PDF', url: "https://drive.google.com/file/d/1DK-5gsN0C5JrJjh0n7NOcfbibknNxxu4/view"},
+        {name:'Adder & Subtractor', type:'PDF', url: "https://drive.google.com/file/d/1pSgB5wpMmGc2rHggzi_AQSX8901_63TH/view"},
+        {name:'Instrumentation Amplifier', type:'PDF', url: "https://drive.google.com/file/d/1784PGdaVFVEvdWe5EuXeh0LDhmL6rHo4/view"},
+        {name:'Integrator & Differentiator', type:'PDF', url: "https://drive.google.com/file/d/1sg_vi-4u4dPkMOfjStqk55klYacVLVvJ/view"},
+        {name:'Logarithmic and Anti Logarithmic Amplifier ', type:'PDF', url: "https://drive.google.com/file/d/1bTe6ezxhVnxFDy21WYMSKt0nkiZ_CYqz/view"},
+        {name:'Comparators & Schmitt Trigger', type:'PDF', url: "https://drive.google.com/file/d/1sJy8jvBr80495qSFqch24dlbKfQ3paBi/view"},
+        {name:'Precision Rectifier & Peak Detector', type:'PDF', url: "https://drive.google.com/file/d/13H3e8E12kCzCFNMkL3Y1SvPSlLhnev3Q/view"},
+        {name:'Clipper & Clamper', type:'PDF', url: "https://drive.google.com/file/d/1kN2dTY4fuLeS3TbuQWSUpN7TQit8hph2/view"},
+        {name:'Low, High, Band Pass Filter', type:'PDF', url: "https://drive.google.com/file/d/1v8Avqs8wZ-qdePMMu87GQ7l4LGNRiLhd/view"},
+        {title:'Introduction of Oscillator', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/16hfQdKJyxNBopghTIqsX8hxyd6vo1JYR/view"}, 
+          {type:'VID', url: "https://www.youtube.com/watch?v=bQrrg8k_ny4"}
+        ]},
+        {name:'Sine Wave Generator', type:'PDF', url: "https://drive.google.com/file/d/1zjGuBix5RUXV_JkYn6egRdhUcj1ykxe8/view"},
+        {title:'RC Phase Shift Oscillator', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1sAv98n6lja7NK0sHG1YCIN1KJ4pbMWc1/view"}, 
+          {type:'VID', url: "https://www.youtube.com/watch?v=BOQXnoLjbh0"}
+        ]},
+        {title:'Wein Bridge Oscillator', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1-1mystXw51djCqqX4prkXSu32uepsgtS/view"}, 
+          {type:'VID', url: "https://www.youtube.com/watch?v=lhFyl3XzpwM"}
+        ]},
+        {title:'Triangular Wave Generator', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1Cy8CVyMdNmelOxih6ZW_X3kOKhn92_W0/view"}, 
+          {type:'VID', url: "https://www.youtube.com/watch?v=hLNFkKTSN_A"}
+        ]},
+        {title:'Sawtooth Wave Generator', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1bCwQSM9jL0cgLcxObXGGT_1cMNcQ7ZO9/view"}, 
+          {type:'VID', url: "https://www.youtube.com/watch?v=sVhV19KhgKc"}
+        ]},
+        {name:'Full Notes', type:'PDF', url: "https://drive.google.com/file/d/1qHrTy81Zxuge6DUF-0XpNfs6-Pjwf2Sc/view"},
+        {name:'Assignment 2', type:'PDF', url: "https://drive.google.com/file/d/1hoAMuJtK0-aVwReS4GVKArNytA0Zd4HN/view"},
+        {name:'2 marks with answers', type:'PDF', url: "https://drive.google.com/file/d/1DBKJ6iKsIiO5kv0c-c_M4Afl6oqEdPbx/view"},
+        {name:'Question Bank', type:'PDF', url: "https://drive.google.com/file/d/1qOLz2k2sbb0DUTbFbDchg9vSwMzDNEUE/view"}
       ]},
-      { title:'Unit 3 – Active Filters and Oscillators', resources:[
-        {name:'Filter Design Notes', type:'PDF'},
-        {name:'Oscillator Circuits', type:'PDF'},
-        {name:'Assignment 3', type:'DOC'}
+      { title:'Unit 3 – Analog Multiplier and PLL', resources:[
+        {name:'Analog Multiplier', type:'PDF', url: "https://drive.google.com/file/d/1dyBqayLypsNkhhSeR1g7hokqirY2POgm/view"},
+        {name:'Emitter Coupled Transistor Pair', type:'PDF', url: "https://drive.google.com/file/d/1JHlGMa9QiFz401Y_8gg_tfk5hY-JJuPo/view"},
+        {name:'Gilbert Multiplier Cell', type:'PDF', url: "https://drive.google.com/file/d/1yl7Aaf5efvhQ5ruKkiZLRqQvrOmRHkYS/view"},
+        {name:'Variable Transconductance Technique', type:'PDF', url: "https://drive.google.com/file/d/1DOk0J2mXy9dWTQRJGvlG4ye3N11FWX2a/view"},
+        {name:'Analog Multiplier ICs and their Applications', type:'PDF', url: "https://drive.google.com/file/d/1DMGU1RjuxG3fo4UUSWjdsQOTOovqVRu5/view"},
+        {name:'Operation of the basic PLL', type:'PDF', url: "https://drive.google.com/file/d/1-mW73AwF7L9vjhPPV5v5jU5eAZ1hAhRO/view"},
+        {name:'Closed Loop Analysis', type:'PDF', url: "https://drive.google.com/file/d/1fsEss3pZi0-lVue0L82se32EQgYLbllN/view"},
+        {name:'Voltage Controlled Oscillator', type:'PDF', url: "https://drive.google.com/file/d/16PYxZn25aJGTnlP3Qrp3Tu7C2miHwsoE/view"},
+        {name:'Monolithic PLL IC 565', type:'PDF', url: "https://drive.google.com/file/d/10QG4ftkEp9QflkBDvx1BNSNGkT2sdN9i/view"},
+        {name:'Applications of PLL', type:'PDF', url: "https://drive.google.com/file/d/1vSvD3BBlr_1doKPrq91HbSi7kYAYhz9f/view"},
+        {name:'Full Notes', type:'PDF', url: "https://drive.google.com/file/d/1YhwmYkCMFV5elymm_zokWUS0j7n5XLlU/view"},
+        {name:'2 marks with answers', type:'PDF', url: "https://drive.google.com/file/d/1uPDZNp8kX-wCzqMlTGSf1psnXWJX7Vjw/view"},
+        {name:'Question Bank', type:'PDF', url: "https://drive.google.com/file/d/17hfhAplO56lzEIpnKUPqM9lIV2Yu6D9w/view"}
       ]},
-      { title:'Unit 4 – A/D & D/A Converters', resources:[
-        {name:'DAC Architectures', type:'PDF'},
-        {name:'ADC Architectures', type:'PDF'},
-        {name:'Assignment 4', type:'DOC'}
+      { title:'Unit 4 – Analog to Digital and Digital to Analog Converters', resources:[
+        {name:'Switches for DACs & High-Speed Sample and Hold Circuits', type:'PPT', url: "https://drive.google.com/file/d/1Nk6jRQ4LGD2q1wlyLTb_g_jfs25dxBvD/view"},
+        {name:'Digital to Analog Converters and Its Specification', type:'PPT', url: "https://drive.google.com/file/d/1O3ttzF24w5iOgRXTmAniPrrErsOKdWbb/view"},
+        {name:'Analog to Digital Converters', type:'PPT', url: "https://drive.google.com/file/d/174C8Ni7DgpxfI5cSYoa3VDjoaeef6zsf/view"},
+        {name:'DAC Specifications & ADC Specification', type:'PPT', url: "https://drive.google.com/file/d/1tbUlw_RE2Mri1CX6U4O4zfCLJcmfnnkq/view"},
+        {name:'Assignment', type:'PDF', url: "https://drive.google.com/file/d/1h3jXJVsplTO0o8fly2yDYlwMpQ6xnsPg/view"},
+        {name:'2 marks with answers', type:'PDF', url: "https://drive.google.com/file/d/14a2cmQzF1lBtf0EzJ-UhnR7sUdB_Z_zy/view"},
+        {name:'Question Bank', type:'PDF', url: "https://drive.google.com/file/d/1ED83bl97KzMuGnVK-PsR0vIvOLhmJR10/view"},
+        {name:'Full Notes', type:'PDF', url: "https://drive.google.com/file/d/1wCv6Qpn7LDI-yqwsWWEJ6mB-wl41JLJh/view"}
       ]},
-      { title:'Unit 5 – Voltage Regulators', resources:[
-        {name:'Linear Voltage Regulators', type:'PDF'},
-        {name:'Switched-Mode Power Supplies', type:'PDF'},
-        {name:'Question Bank', type:'PDF'}
+      { title:'Unit 5 – Waveforms Generator and Special functions ICs', resources:[
+        {title:'Multivibrators Introduction', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1jYapuO-1vc3c6NrrLImD3kRwkwLwRF1j/view"}, 
+          {type:'VID', url: "https://www.youtube.com/watch?v=_eOtth59stI"}
+        ]},
+        {title:'Astable Multivibrator using OPAMP', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1sTl4HyhVAYDWdl8ZQDCRGL0jazHLjCoK/view"}, 
+          {type:'VID', url: "https://www.youtube.com/watch?v=OxZrJ4C0-4Q"}
+        ]},
+        {title:'Monostable Multivibrator using OPAMP', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1gZldc3hsmqwnZC1UjVc5FdxwwDIGSa1r/view"}, 
+          {type:'VID', url: "https://www.youtube.com/watch?v=44zMai6zn40"}
+        ]},
+        {title:'555 Timer IC Introduction', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/100P7qnDWEygIbJN2oxZxiB_mVssVqRPI/view"}, 
+          {type:'VID', url: "https://www.youtube.com/watch?v=1C7L05j32I4"}
+        ]},
+        {title:'Astable Multivibrator using 555 Timer IC', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1OZ8Dj-nYgXCUY7lACVf0yEeyQzu_AmXj/view"}, 
+          {type:'VID', url: "https://www.youtube.com/watch?v=E5vOqb8eX3g"}
+        ]},
+        {title:'Monostable Multivibrator using 555 Timer IC', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1FOkRYh-Qgls2RgAZcHuxNXPx2hTaoGwU/view"}, 
+          {type:'VID', url: "https://www.youtube.com/watch?v=y_6eazogneI"}
+        ]},
+        {title:'ICL8038 Function Generator', files: [{type:'PDF', url: "https://drive.google.com/file/d/1eYU6KL3RURFzhuraDRCKy6m3YyHm8aYX/view"}]},
+        {title:'2 marks with answers', files: [{type:'PDF', url: "https://drive.google.com/file/d/1LCxzGAfItT2lhBrfovuZc1YL6R5Wg8KV/view"}]},
+        {title:'Question Bank', files: [{type:'PDF', url: "https://drive.google.com/file/d/1eE13FE11GhauqoXcnwx42YAEiixUUOGI/view"}]},
+      ]},
+      {title:'Full Notes', files: [{type:'PDF', url: "https://drive.google.com/file/d/1wfZ6RwemDR3Bf4PXaABT5_To2j0avHUA/view"}]},
+      { title:'University Questions', resources:[
+        {name:'LIC April May 15', type:'PDF', url: "https://drive.google.com/file/d/1utUrnH5-DKEpcwr2EWmYQ6SOvDm56mGa/view"},
+        {name:'LIC Nov Dec 15', type:'PDF', url: "https://drive.google.com/file/d/1Rao9utmCBmu2eoNY_zo9ma_4G2g0ak_N/view"},
+        {name:'LIC April May 16', type:'PDF', url: "https://drive.google.com/file/d/1mlbpDHGKGk1phKMfSa7QI3bTkQvGr6dg/view"},
+        {name:'LIC Nov Dec 16', type:'PDF', url: "https://drive.google.com/file/d/1FhvV65kgLxWIkCAGCOeYq5V5n3378mt0/view"},
+        {name:'LIC April May 17', type:'PDF', url: "https://drive.google.com/file/d/17mewRkS6Ez5fE7ODk3JhzgvfW6LzPLsa/view"},
+        {name:'LIC Nov Dec 17', type:'PDF', url: "https://drive.google.com/file/d/1vzYXfVK9a85ecRT7n0Q-icTtttb6ipVl/view"},
+        {name:'LIC April May 18', type:'PDF', url: "https://drive.google.com/file/d/1yJuyOzGCnvDrD4X9nh2oYDFDpxD4k7tR/view"},
+        {name:'LIC Nov Dec 18', type:'PDF', url: "https://drive.google.com/file/d/18B5QSenylO2ENaz-3oi37TmRSrE2RYPu/view"},
       ]}
     ]
   },
   dav: {
     icon:'📊', title:'Data Analytics and Visualization',
     desc:'Covers statistical analysis, data processing pipelines, machine learning basics, and visualization techniques.',
-    syllabus: "https://drive.google.com/file/d/1blT6HX9iFfbTqEtEq5NEh8K6vpzsMWN7/view",
-    coursePlan: "https://drive.google.com/file/d/1GPWC1fB08YKB-6n7WwJp1tMmc1hNXbS6/view",
+    syllabus: "https://drive.google.com/file/d/1YjMqNF3GwwM_o_8Hhc3SbDL84m8hTEUK/view",
+    coursePlan: "https://drive.google.com/file/d/1rejTipgigMkITMbqNGq-LRNxsFtnk4QX/view",
     units:[
-      { title:'Unit 1 – Introduction to Data Analytics', resources:[
-        {name:'Data Analytics Overview', type:'PDF'},
-        {name:'Types of Analytics', type:'PDF'},
-        {name:'Assignment 1', type:'DOC'}
+      { title:'Unit 1 – Basics of Data Visualization', resources:[
+        {title:'Basic Current Source', files: [{type:'PDF', url: "https://drive.google.com/file/d/1GjaYO7_f-8I3U_lUTRhkxG0ma6x3uv52/view"}]},
+        {title:'The Seven Stages of Visualizing Data', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1m8NmScDqTiMTe2mwuJ3hbD5auO2YMofJ/view"}, 
+          {type:'Example', url: "https://drive.google.com/file/d/1m8NmScDqTiMTe2mwuJ3hbD5auO2YMofJ/view"}
+        ]},
+        {title:'Getting Started with Processing', files: [{type:'PDF', url: "https://drive.google.com/file/d/1dNVo3UIaanlzEPtAeqzmzZdjiZgqIzWd/view"}]},
+        {title:'Mapping', files: [{type:'PDF', url: "https://drive.google.com/file/d/1K1xl01wx-ec9jl6Wbh3UeLBFLAAQ-bpL/view"}]},
+        {title:'Time Series', files: [{type:'PDF', url: "https://drive.google.com/file/d/1fE7T6t6iNEW1DbbG6g5xT4eDHzqsdo7J/view"}]},
+        {title:'Connections and Correlations', files: [{type:'PDF', url: "https://drive.google.com/file/d/1cDYJ87qLbm1o1E7h3EhOxb_p6w9BCTPS/view"}]},
+        {title:'Scatterplot Maps', files: [{type:'PDF', url: "https://drive.google.com/file/d/1UCXVJANTLS_zUUCBF5UN5j2qwF_YdXXb/view"}]},
+        {title:'Trees, Hierarchies, and Recursion', files: [{type:'PDF', url: "https://drive.google.com/file/d/1wujTzvK8bapiH3h3mBY87A2ew6L_2LEM/view"}]},
+        {title:'Networks', files: [{type:'PDF', url: "https://drive.google.com/file/d/1VrR4_axAwAiAGGmvIOBByUu_VjfPStzs/view"}]},
+        {title:'Graphs', files: [{type:'PDF', url: "https://drive.google.com/file/d/1-NHpd_e47uPy1IeQTHQtjvtq7O4J4ArS/view"}]},
+        {title:'Acquiring Data', files: [{type:'PDF', url: "https://drive.google.com/file/d/1YVrhB82Kcno-eIQkdnmAIctmHsISpifD/view"}]},
+        {title:'Parsing Data', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/15DHcDGkLsOSkKfOEnm7fZPuA0_HCBQZQ/view"}, 
+          {type:'Example', url: "https://drive.google.com/file/d/15C31XfMCrx0cNmZyQ1Asmh-cCQ06A7V9/view"}
+        ]},
+        {title:'Question Bank', files: [{type:'PDF', url: "https://drive.google.com/file/d/1kI7IygONRmjo4zFf7oY7_JHWqWIXPMPa/view"}]},
       ]},
-      { title:'Unit 2 – Statistical Methods', resources:[
-        {name:'Descriptive Statistics', type:'PDF'},
-        {name:'Inferential Statistics', type:'PDF'},
-        {name:'Assignment 2', type:'DOC'}
+      { title:'Unit 2 – Visualizing using Matplotlib', resources:[
+        {name:'Importing Matplotlib, Colors, Subplots', type:'PDF', url: "https://drive.google.com/file/d/1nuKOsPlgkzZcKT66FDcySHT8ffQg4wcL/view"},
+        {name:'Simple Line Plots', type:'PDF', url: "https://drive.google.com/file/d/1PEbAVh93SPVA2Ty6Z3Hsv3FCCEyWNtO3/view"},
+        {name:'Simple Scatter Plots', type:'PDF', url: "https://drive.google.com/file/d/1L_fywqtGzBQUOXpAfLBvUS-1TfN2hUPm/view"},
+        {name:'Visualizing Errors', type:'PDF', url: "https://drive.google.com/file/d/1978wArnCQ0VEiqA7UcZyxEfduIe2ovo5/view"},
+        {name:'Density and Contour Plots', type:'PDF', url: "https://drive.google.com/file/d/1uJsNpiqjPdJWRgPFkM5VbNl9lAiAYtxm/view"},
+        {name:'Histograms', type:'PDF', url: "https://drive.google.com/file/d/1tEGQdgBjV1Qi1ORBPfBZZZMRBjmqXJLn/view"},
+        {name:'Legends', type:'PDF', url: "https://drive.google.com/file/d/1aM1efUFfpQuKrFbWVMO0f6-VO9CuVJcb/view"},
+        {name:'Text and Annotation', type:'PDF', url: "https://drive.google.com/file/d/11GpcWn8AZpKH7mtj1Nr_-AW5r3DyH8yR/view"},
+        {name:'Three Dimensional Plotting', type:'PDF', url: "https://drive.google.com/file/d/1CLbK1PfyvZapIN2p8saNFCxY-hMQKKFV/view"},
+        {name:'Geographic Data with Basemap', type:'PDF', url: "https://drive.google.com/file/d/1AkkbI_gF6nRG22Xz_kgUEQK_lsud-agx/view"},
+        {name:'Visualization with Seaborn', type:'PDF', url: "https://drive.google.com/file/d/11x_DLLyzMO__fP1N2HDjFjp78yZ2Qj-_/view"},
+        {name:'Question Bank', type:'PDF', url: "https://drive.google.com/file/d/1jDJfhx5kGVJUHrXhs0YpxoRAu8gR3sFW/view"}
       ]},
-      { title:'Unit 3 – Data Preprocessing', resources:[
-        {name:'Data Cleaning Techniques', type:'PDF'},
-        {name:'Feature Engineering', type:'PDF'},
-        {name:'Assignment 3', type:'DOC'}
+      { title:'Unit 3 – IoT Fundamentals, Design and Development', resources:[
+        {name:'Introduction & types of Data Analytic', type:'PDF', url: "https://drive.google.com/file/d/1RgYCKlA03ZcDiqsJd7sitMfpC3KzQgde/view"},
+        {name:'Predictive Analytics: Simple linear regression', type:'PDF', url: "https://drive.google.com/file/d/1mxkVQ4_RnAJgoOQnPlvWxhbCmeikUZ2j/view"},
+        {name:'Multiple linear regression', type:'PDF', url: "https://drive.google.com/file/d/14fc0NYRLgDRGrDQaZ8G2CBUoMcQ6O_uX/view"},
+        {name:'Simple and Multiple Linear Regression', type:'Demo', url: "https://alwynrajivs.github.io/Regression-Analysis-Platform"},
+        {name:'Auto regression', type:'PDF', url: "https://drive.google.com/file/d/1MLqjo5zeDKqUU041ryblxB2nOB-h62EM/view"},
+        {name:'Moving Average', type:'PDF', url: "https://drive.google.com/file/d/1C3RA1YPW3W6fKhqLzfu7brWORWdWokad/view"},
+        {name:'Autoregressive Integrated Moving Average', type:'PDF', url: "https://drive.google.com/file/d/15E4j3c55h8bcqY8I1aOsFSFJoTT_Mvdh/view"},
+        {name:'Data Preprocessing: Data Cleaning', type:'PDF', url: "https://drive.google.com/file/d/1J1tP7TYyHH7uqu7lHN1jUEqqka4vZiuj/view"},
+        {name:'Integration and Transformation', type:'PDF', url: "https://drive.google.com/file/d/1H7e2g9MgEq27klG_lR9SotY_QFsp2eRu/view"},
+        {name:'Data Reduction', type:'PDF', url: "https://drive.google.com/file/d/1pddOIzHqwmetXsCseY1TkfB36ee5-PX_/view"},
+        {name:'Descriptive Data Analytics, Measures of Central Tendency & Location of Dispersions', type:'PPT', url: "https://docs.google.com/presentation/d/1OZS6B9EEQ0vvtlAmVYhn7RyqRT7YIop0/edit?slide=id.p1#slide=id.p1"},
+        {name:'Question Bank', type:'PDF', url: "https://drive.google.com/file/d/1Z091BgH2Z3G-G_vdZlGa591jJrnUkv0Y/view"},
+        {name:'Regression Practice', type:'Demo App', url: "https://alwynrajivs.github.io/Data-Analytics-Visualization/linear_regression.html"},
+        {name:'Time Series Practice', type:'Demo App', url: "https://alwynrajivs.github.io/Data-Analytics-Visualization/time_series.html"}
       ]},
-      { title:'Unit 4 – Data Visualization', resources:[
-        {name:'Visualization Principles', type:'PDF'},
-        {name:'Matplotlib & Seaborn', type:'PDF'},
-        {name:'Assignment 4', type:'DOC'}
+      { title:'Unit 4 – Data Analytics and Supporting Services', resources:[
+        {title:'Association Rule Mining: Efficient and Scalable Frequent Item set Mining Methods', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1nCONFvQjOUYGiTO2boqYSZ1tqe8UOePv/view"}, 
+          {type:'Demo App', url: "https://alwynrajivs.github.io/Associate-Rule-Mining"}
+        ]},
+        {title:'Mining Various Kinds of Association Rules', files: [{type:'PDF', url: "https://drive.google.com/file/d/16_NyYkgXzUaP-A140VGnz36yur4oBvj9/view"}]},
+        {title:'Association Mining to Correlation Analysis', files: [{type:'PDF', url: "https://drive.google.com/file/d/1qp6EpKRNVAm29cfrxiPrFb5ClENiu8b2/view"}]},
+        {title:'Constraint Based Association Mining', files: [{type:'PDF', url: "https://drive.google.com/file/d/1k6CfW-6bF3YPz5h_zOs9z8QETCQLQfzJ/view"}]},
+        {title:'Cluster Analysis: Types of Data in Cluster Analysis – A Categorization of Major Clustering Methods – Partitioning Methods – Hierarchical methods', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1eT1cbL9P3QvbOeEV3PObrbVtKPJ2B3Ia/view"}, 
+          {type:'Tutorial Problems', url: "https://drive.google.com/file/d/1fjAo2R4koLblQNxrBnzsfDUyVl2HepwJ/view"},
+          {type:'Clustering Practice', url: "https://drive.google.com/file/d/1fjAo2R4koLblQNxrBnzsfDUyVl2HepwJ/view"}
+        ]},
+        {title:'Question Bank', files: [{type:'PDF', url: "https://drive.google.com/file/d/1SgKALpEKRQS7tJaJN0wH2eMR70aOUO9H/view"}]},
       ]},
-      { title:'Unit 5 – Machine Learning Basics', resources:[
-        {name:'Supervised Learning', type:'PDF'},
-        {name:'Unsupervised Learning', type:'PDF'},
-        {name:'Question Bank', type:'PDF'}
-      ]}
+      { title:'Unit 5 – Case Studies / Industrial Applications', resources:[
+        {name:'Stream Processing', type:'PDF', url: "https://drive.google.com/file/d/1iRTT_tBuuAjxMNCZySzGctIKWb1WrCvS/view"},
+        {name:'Case Study – Stock Market Analysis', type:'PDF', url: "https://drive.google.com/file/d/1tVWrAl-wyK9cg_H6qxs7jgenxaSBJew0/view"},
+        {name:'Case Study – Sentiment Analysis', type:'PDF', url: "https://drive.google.com/file/d/1LCK6abCCQM2S1hclHIFnbIjJwvZCxfFW/view"},
+        {name:'Question Bank', type:'PDF', url: "https://drive.google.com/file/d/1kmfHWXmAQ_Y7fc-Kve8cAJ2uSMNxix05/view"}
+      ]},
     ]
   },
   ct1: {
@@ -1932,7 +2103,13 @@ function showSubject(id) {
             </div>
             <div class="unit-body">
               <ul class="resource-list">
-                ${u.resources.map(resource => {
+                ${(u.resources || []).map(resource => {
+                  console.log("Unit:", u);
+console.log("Resources:", u.resources);
+
+if (!Array.isArray(u.resources)) {
+    console.error("Broken unit found:", u);
+}
 
   if(resource.files){
       return `
