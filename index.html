@@ -1626,31 +1626,69 @@ const SUBJECTS = {
   avlsi: {
     icon:'🔬', title:'Analog VLSI Design',
     desc:'Transistor-level analog circuit design in deep sub-micron CMOS including amplifiers, current mirrors, and PLLs.',
+    syllabus: "https://drive.google.com/file/d/1WPn8mfcTcZl2NwIqTWKUhBqoRgfg_o6G/view",
+    coursePlan: "https://drive.google.com/file/d/1bGXMzdEu2uV6r4Up4Yow7gTrUQeY8tH6/view",
     units:[
-      { title:'Unit 1 – MOS Transistor Analog Behaviour', resources:[
-        {name:'Analog MOS Transistor Models', type:'PDF'},
-        {name:'Small Signal Analysis', type:'PDF'},
-        {name:'Assignment 1', type:'DOC'}
+      { title:'Unit - 1 CMOS Analog Sub circuits', resources:[
+        {name:'Introduction to Analog Integrated Circuit Design', type:'PDF', url: "https://drive.google.com/file/d/1JtJuiS6ZEAZW6f21mtzskqn3fUwWsOOJ/view"},
+        {name:'Active Resistors', type:'PDF', url: "https://drive.google.com/file/d/1dlDZwqbR2Erj3NR1Q7B4U2-1QHiFFnqy/view"},
+        {name:'Analog Switches', type:'PDF', url: "https://drive.google.com/file/d/1ubmudCwuGeONveFSlKsHIb9N3koxPKpt/view"},
+        {name:'Current Sources & Sinks', type:'PDF', url: "https://drive.google.com/file/d/1bWhVGg4rRGw5wjnQLFZEGEGrmDT_mivG/view"},
+        {name:'Basic Current Mirror and Cascode Current Mirror', type:'PDF', url: "https://drive.google.com/file/d/1Yvpwyj0wDiNxoC8R0QlDAyg0Jp2dbEzd/view"},
+        {name:'Basic Current Mirror', type:'Demo', url: "https://everycircuit.com/circuit/4672495253454848/current-source-mosfet"},
+        {name:'Cascode Current Mirror ', type:'Demo', url: "https://everycircuit.com/circuit/4678968275632128/cascode-current-mirror"},
+        {name:'Voltage Reference', type:'PDF', url: "https://drive.google.com/file/d/1onwCgf1PlAedG9dCnU-9j2JfHe7B_Hge/view"},
+        {name:'Supply  Independent Biasing', type:'PDF', url: "https://drive.google.com/file/d/1O-P5JDJDJvq2ZXm_3gXXivZA2wy2gyos/view"},
+        {name:'Supply Independent Biasing', type:'Demo', url: "https://everycircuit.com/circuit/5808309323694080/supply-independent-biasing"},
+        {name:'Controlled Supply Independent Biasing ', type:'Demo', url: "https://everycircuit.com/circuit/5246353806196736/supply-independent-biasing---version-1"},
+        {name:'Temperature Independent Biasing', type:'PDF', url: "https://drive.google.com/file/d/1kUC4zqWUDL4U-a_k9J0LvUbgBSUcKt6A/view"},
+        {name:'PTAT Current Generation', type:'PDF', url: "https://drive.google.com/file/d/1LffOM_sQAJwMyYu_3qP1mxnO0kzUMXH-/view"},
+        {name:'Constant Gm Boosting', type:'PDF', url: "https://drive.google.com/file/d/1mZ7IfXVGecTVASQdfYLcMgaetAw4fCI-/view"},
+        {name:'Speed and Noise Issue', type:'PDF', url: "https://drive.google.com/file/d/1l0F5Qe_cOL2zJrYQGAGCCN1J2dBZHG4t/view"},
+        {name:'Numerical Problem (Tutorial)', type:'PDF', url: "https://drive.google.com/file/d/1u3171PLIhsfSnhLowInuSlXpoo_djNJG/view"},
       ]},
       { title:'Unit 2 – Single Stage Amplifiers', resources:[
-        {name:'MOSFET Amplifier Configurations', type:'PDF'},
-        {name:'Gain-Bandwidth Analysis', type:'PDF'},
-        {name:'Assignment 2', type:'DOC'}
+        {name:'Single Stage Amplifiers – Basic Concepts', type:'PDF', url: "https://drive.google.com/file/d/1G-BGIC64t_9cKcnAwkBjSlt0Am4MP2pJ/view"},
+        {name:'Common Source Amplifier With Resistive Load', type:'PDF', url: "https://drive.google.com/file/d/1noKsUfKHFQtFmjTiFYMJEbrHCBVsUCcJ/view"},
+        {name:'Common Source Amplifier With Diode Connected Load', type:'PDF', url: "https://drive.google.com/file/d/1f1hZGTeUfzinkZMVMwwCd1hACDCkwtUy/view"},
+        {name:'Common Source Amplifier With Current Source', type:'PDF', url: "https://drive.google.com/file/d/1gCZLvgJHFEo6RqpVvDR1lxPXADlYYO5Q/view"},
+        {name:'Common Source Amplifier With Active Load', type:'PDF', url: "https://drive.google.com/file/d/18GLj99sYOkarKH7TbG2uKYTlgOOhd6gE/view"},
+        {name:'Common Source Amplifier With Source Degeneration', type:'PDF', url: "https://drive.google.com/file/d/1knvnnF3b1OKiSn9_SLh0ze5YfTHBQRi7/view"},
+        {name:'Common Drain Amplifier (Source Follower)', type:'PDF', url: "https://drive.google.com/file/d/1oIY0jJIm-0e84HXCjQQWs_R20dJJymPX/view"},
+        {name:'Common Gate Amplifier', type:'PDF', url: "https://drive.google.com/file/d/1bLtlYrx24WULwDnb8dOFiPU0M6YlxrXX/view"},
+        {name:'Cascode Stage Amplifier', type:'PDF', url: "https://drive.google.com/file/d/1HKaEAGDSDA9j6_oGgxG-Dxd_5WVE8mGq/view"},
+        {name:'Folded Cascode State Amplifier', type:'PDF', url: "https://drive.google.com/file/d/1jV7KsnNnYop6TZbyVQUeS-6VoNbueJSn/view"},
+        {name:'Tutorial Problem', type:'PDF', url: "https://drive.google.com/file/d/1clBtpgH96Q0DMnf97Wc1RVcGFTebMOfj/view"},
       ]},
-      { title:'Unit 3 – Differential Amplifiers', resources:[
-        {name:'Differential Pair Analysis', type:'PDF'},
-        {name:'CMRR and PSRR', type:'PDF'},
-        {name:'Assignment 3', type:'DOC'}
+      { title:'Unit 3 – Differential Amplifier', resources:[
+        {name:'Single Ended & Differential Operation', type:'PDF', url: "https://drive.google.com/file/d/10qCp2jGtEVeMxlizdzEkd8-Ko_XTvecP/view"},
+        {name:'Basic Differential Pair & Qualitative Analysis', type:'PDF', url: "https://drive.google.com/file/d/1BZ3j62igQmRiceYzA2w7pguKhhflrpiq/view"},
+        {name:'Quantitative Analysis', type:'PDF', url: "https://drive.google.com/file/d/136CN6RZNUyTgia1rP-6jmtob6RT1CYhc/view"},
+        {name:'Common Mode Response', type:'PDF', url: "https://drive.google.com/file/d/1ZbrYJyYpUjqX2-xoEcK4sdXEDUe_1vPL/view"},
+        {name:'Differential Pair with MOS Loads', type:'PDF', url: "https://drive.google.com/file/d/1gLJ0be6YfVm6-RjBdUIiS1SCF21gtoDV/view"},
+        {name:'Gilbert Cell', type:'PDF', url: "https://drive.google.com/file/d/1ATkiLJr2_NXMXeS_BzY9aG5KpKJYS4L6/view"},
+        {name:'Frequency Response', type:'PDF', url: "https://drive.google.com/file/d/1D2fJv5KViYxvuPV5BplHbyOr0TjLYSmp/view"},
       ]},
-      { title:'Unit 4 – Current Mirrors & References', resources:[
-        {name:'Current Mirror Circuits', type:'PDF'},
-        {name:'Bandgap Reference Design', type:'PDF'},
-        {name:'Assignment 4', type:'DOC'}
+      { title:'Unit 4 – Operational Amplifier', resources:[
+        {name:'General Considerations', type:'PDF', url: "https://drive.google.com/file/d/1A-3rYl-vXBMlqimOLGedkq-PWFRSUrZF/view"},
+        {name:'One Stage OPAMPs', type:'PDF', url: "https://drive.google.com/file/d/1vT_-mYFGvTRT2idTvoCGcHk3L5epjPhQ/view"},
       ]},
-      { title:'Unit 5 – PLL & Data Converters', resources:[
-        {name:'Phase Locked Loop Design', type:'PDF'},
-        {name:'Analog-Digital Converters in CMOS', type:'PDF'},
-        {name:'Question Bank', type:'PDF'}
+      { title:'Unit 5 – Data Converters', resources:[
+        {name:'Data Converter Fundamentals', type:'PDF', url: "https://drive.google.com/file/d/1jD60tqVUVG_pccMEKHN3aPkkg6nfORZm/view"},
+        {name:'DAC & ADC Specification', type:'PDF', url: "https://drive.google.com/file/d/1h3JUA6M9Fmi97cL7xYnQjfmghMI9l1db/view"},
+        {name:'Flash Type ADC', type:'PPT', url: "https://docs.google.com/presentation/d/15SOWLp2gEXLky8ESPn3J8hgp31d_ZTpX/edit?slide=id.p1#slide=id.p1"},
+        {name:'Two Step Flash ADC', type:'PPT', url: "https://docs.google.com/presentation/d/1rT1Y3xAIMgmhbeTQG8dj_glqWcwzrTO9/edit?slide=id.p1#slide=id.p1"},
+        {name:'Pipeline ADC', type:'PPT', url: "https://docs.google.com/presentation/d/1sfXggy6PWe0V7E0pfE8lOk1vnWcg6FI4/edit?slide=id.p1#slide=id.p1"},
+        {name:'Successive Approximation ADC', type:'PPT', url: "https://docs.google.com/presentation/d/1xz-9g57e2JC-6Y9dCUfAfIwGKEH1K37i/edit?slide=id.p1#slide=id.p1"},
+        {name:'Oversampling ADC', type:'PPT', url: "https://docs.google.com/presentation/d/1kVWhmCmKMvn4gerVY3TEqzhavVhjRsNA/edit?slide=id.p1#slide=id.p1"},
+        {name:'Full Notes', type:'PDF', url: "https://drive.google.com/file/d/1GsccgbrDNf4XAmpSrajLS-JPqIWUjC-c/view"},
+      ]},
+      { title:'Question Bank', resources:[
+        {name:'Unit 1', type:'PDF', url: "https://drive.google.com/file/d/1OaJKyGxg_SwEHDmM-7F0uuue_whlrC5G/view"},
+        {name:'Unit 2', type:'PDF', url: "https://drive.google.com/file/d/1YaQfj7u3mGU9O_k3WsybYeZiI4kVUQ-r/view"},
+        {name:'Unit 3', type:'PDF', url: "https://drive.google.com/file/d/19Kpat8k800_iNfvokJmxDkXtIKhrLdsB/view"},
+        {name:'Unit 4', type:'PDF', url: "https://drive.google.com/file/d/16tA7g3DdqD801PvqmTtjhmMOmAkqszo8/view"},
+        {name:'Unit 5', type:'PDF', url: "https://drive.google.com/file/d/1HvGafBkoeI_0VXrERpVNM8-rGqvYDIKT/view"},
       ]}
     ]
   },
