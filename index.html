@@ -1695,102 +1695,261 @@ const SUBJECTS = {
   ec8691: {
     icon:'🧠', title:'EC8691 – Microprocessors and Microcontrollers',
     desc:'8086 microprocessor architecture, instruction set, programming, interfacing, and 8051 microcontroller systems.',
+    syllabus: "https://drive.google.com/file/d/1sV-GrbkAtvFDYWN21DPkH5nsnrYjcdMX/view",
     units:[
+      { title:'Introduction', resources:[
+        {name:'Introduction to Microprocessor', type:'PDF', url: "https://drive.google.com/file/d/1cFKtp89fzqE6lEUeEk0KVc3JqnW7uGGv/view"},
+        {title:'Video Lectures', 
+        files: [
+          {type:'Lecture 1', url: "https://www.youtube.com/watch?v=t0mDzV-IAvU&feature=youtu.be"}, 
+          {type:'Lecture 2', url: "https://www.youtube.com/watch?v=LrIu5qOiMtA"},
+          {type:'Lecture 3', url: "https://www.youtube.com/watch?v=Flqkhcvch1U"}
+        ]}
+      ]},
       { title:'Unit 1 – The 8086 Microprocessor', resources:[
-        {name:'Introduction to 8086 & Architecture', type:'PDF'},
-        {name:'Addressing Modes', type:'PDF'},
-        {name:'Instruction Set', type:'PDF'},
-        {name:'Video – Lecture 1 · Lecture 2', type:'VIDEO'},
-        {name:'Assignment 1', type:'DOC'}
+        {title:'Introduction to 8086 & Its Architecture', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1THaga28cf5BuD8XmZBsakKawgpsTJybf/view"}, 
+          {type:'Video', url: "https://youtu.be/JAjgW5_n_mk"}
+        ]},
+        {title:'Addressing Modes', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1yv9y-tr4udNFKq9nz4FvUpHq4_0ges2M/view"}, 
+          {type:'Video', url: "https://www.youtube.com/watch?v=si3uObxiOjc"}
+        ]},
+        {title:'Instruction Set', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/16vYlQXrfKlV1II2r5fs2RX38m2_Ri77P/view"}, 
+          {type:'Video', url: "https://www.youtube.com/watch?v=T4AYSaTgRtY"}
+        ]},
+        {title:'Assembler Directive', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1R0xebn5HGL95J9n-jXecIH3Yn6V9NWq1/view"}, 
+          {type:'Video', url: "https://www.youtube.com/watch?v=f1_gdhJs6RA&t=540s"}
+        ]},
+        {name:'Modular Programming', type:'PDF', url: "https://drive.google.com/file/d/146om8_GPtL0Kjl3dTgek0hahthxypv0d/view"},
+        {name:'Interrupt and Interrupt Service Routines', type:'PDF', url: "https://drive.google.com/file/d/10Dk-zFpjYa_IWFjVlZw4FAr1VKedfurU/view"},
+        {name:'Byte and String Manipulation in 8086', type:'PDF', url: "https://drive.google.com/file/d/1WDWq3v-t9Rez8JVw6xtBwxdP2Jn1KhJj/view"},
       ]},
       { title:'Unit 2 – 8086 System Bus Structure', resources:[
-        {name:'Bus Structure & Timing Diagrams', type:'PDF'},
-        {name:'Memory Organization', type:'PDF'},
-        {name:'Interrupts & Interrupt Service Routines', type:'PDF'},
-        {name:'Assignment 2', type:'DOC'}
+        {name:'8086 Signals or Pin Diagram', type:'PDF', url: "https://drive.google.com/file/d/10NWBO335iyRj0lI0C1knxv4VhjY0VSzR/view"},
+        {name:'Basic Configurations Minimum Mode & Maximum Mode', type:'PDF', url: "https://drive.google.com/file/d/1hIKzUdM2wWT8CE18fknOCt9-QqESm3qg/view"},
+        {name:'Introduction System Bus Timing', type:'PDF', url: "https://drive.google.com/file/d/1GI_6Ms20UkpnaLfEQbk6ATYyWoYw82pp/view"},
+        {name:'Timing Diagram of Memory Read Cycle', type:'PDF', url: "https://drive.google.com/file/d/14MV6teErcTi8M70RVcHj9kUQ4bKsvQWw/view"},
+        {name:'Timing Diagram of Memory Write Cycle', type:'PDF', url: "https://drive.google.com/file/d/1H2g2K1uWz6iY5AwOG1Uja4Tj5ykaYCie/view"},
+        {name:'Timing Diagram of IO Read Cycle', type:'PDF', url: "https://drive.google.com/file/d/1S0_znFuJJR2sKj0rhNX7BUfpflAjpTKT/view"},
+        {name:'Timing Diagram of IO Write Cycle', type:'PDF', url: "https://drive.google.com/file/d/1f5IELhEAZEnccYuO5vgTW7O7Vos9I08N/view"},
+        {name:'Timing Diagram of Interrupt Acknowledge Cycle', type:'PDF', url: "https://drive.google.com/file/d/1_ub0Tl4hZ0Tm9D0ipqn3SGpMKngEN0wP/view"},
+        {name:'IO Programming', type:'PDF', url: "https://drive.google.com/file/d/1m3rmyDCP_zORLdLGJUn0U0uraMcouhUc/view"},
+        {name:'Introduction to Multiprogramming', type:'PDF', url: "https://drive.google.com/file/d/18jQq35Rx52fPVR2Ulx28W7ugdFp28daX/view"},
+        {name:'System Bus Structure', type:'PDF', url: "https://drive.google.com/file/d/1jYAJqRfbm_soQleYsxCnNEE5JuxI7lQ4/view"},
+        {name:'Multiprocessor Configuration', type:'PDF', url: "https://drive.google.com/file/d/1z-fAAvNgTxGIrNotBoW73UT7O7LKPNlv/view"},
       ]},
       { title:'Unit 3 – I/O Interfacing', resources:[
-        {name:'I/O Port Interfacing', type:'PDF'},
-        {name:'8255 PPI – Programmable Peripheral Interface', type:'PDF'},
-        {name:'8253/8254 Timer Interface', type:'PDF'},
-        {name:'Assignment 3', type:'DOC'}
+        {name:'Introduction to Memory', type:'PDF', url: "https://drive.google.com/file/d/1oBsx63sDkPdnPOoC8mYdbj56RHvAfmQ5/view"},
+        {name:'Memory Interfacing', type:'PDF', url: "https://drive.google.com/file/d/1OCEpYe0MTO7HCNWjT9-rQ6gjkJdQhIsb/view"},
+        {name:'IO Interfacing', type:'PDF', url: "https://drive.google.com/file/d/1dAsrYnY2YA_H-V_P1q9D4BSeeuzys9Bq/view"},
+        {name:'Parallel Communication Interface', type:'PDF', url: "https://drive.google.com/file/d/1IZ4XUWU_eGvNraPFQ1_Y8vwH3_yrvAy9/view"},
+        {name:'Serial Communication Interface', type:'PDF', url: "https://drive.google.com/file/d/1F8TRpETji-sq1994pT5-NIlY2viYyRe3/view"},
+        {name:'DAC Interface', type:'PDF', url: "https://drive.google.com/file/d/1vWD1FnuwM0Lh8TZjIgq7ebrVLkx5OaVN/view"},
+        {name:'ADC Interface', type:'PDF', url: "https://drive.google.com/file/d/1k_x6eFmgiup11U2FZRiWQpbcG5P0gfFp/view"},
+        {name:'Timer or Counter Interface 8254', type:'PDF', url: "https://drive.google.com/file/d/1-JODEStIGTr4-vuRELJcQQzrhz8-MBDV/view"},
+        {name:'Programmable Interrupt Controller 8259', type:'PDF', url: "https://drive.google.com/file/d/1P6hqyg6p8Wz8dgST4uBYTQoBRJ3xDd-W/view"},
       ]},
-      { title:'Unit 4 – Microcontroller (8051)', resources:[
-        {name:'8051 Architecture & Features', type:'PDF'},
-        {name:'8051 Instruction Set', type:'PDF'},
-        {name:'8051 Programming Examples', type:'PDF'},
-        {name:'Assignment 4', type:'DOC'}
+      { title:'Unit 4 – Microcontroller', resources:[
+        {name:'Microcontroller Introduction', type:'PDF', url: "https://drive.google.com/file/d/1IdNF-FcSEQ1m7jyGDmQdZEBIWknT73yU/view"},
+        {name:'Basic Functional Block Diagram of a Microcontroller', type:'PDF', url: "https://drive.google.com/file/d/1MgLpv7DST2wDHJX2zihrMUbgmUBHQ3OT/view"},
+        {name:'Architecture of 8051 Microcontroller', type:'PDF', url: "https://drive.google.com/file/d/1zIQ2CMeVuni1uLyv1-kf8E6QMN9j8k1w/view"},
+        {name:'Microcontroller Programming Model of 8051', type:'PDF', url: "https://drive.google.com/file/d/1Mj_6omBLh6N7e8MfkAqGoCtxvceCQQaW/view"},
+        {name:'Special Function Register (SFR) of 8051', type:'PDF', url: "https://drive.google.com/file/d/1xSNapg2wWBvXh2mIDhcFUjzM-kXmGBME/view"},
+        {name:'8051 Microcontroller Addressing Modes', type:'PDF', url: "https://drive.google.com/file/d/1HIujWMiFRuLDhI2yFcoHKjzw105359pt/view"},
+        {name:'8051 Microcontroller Instruction Set', type:'PDF', url: "https://drive.google.com/file/d/18XI_F_Kkaxf0YwuOlRkSCuWiYWsKUHYN/view"},
       ]},
-      { title:'Unit 5 – Interfacing Microcontroller', resources:[
-        {name:'Serial Communication – UART', type:'PDF'},
-        {name:'ADC / DAC Interfacing with 8051', type:'PDF'},
-        {name:'LCD & Keypad Interfacing', type:'PDF'},
-        {name:'Question Bank – All Units', type:'PDF'}
-      ]}
+      { title:'Program', resources:[
+        {title:'Program 1 : Addition of Two 16 bit Number', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1GT7zyFlTylfu3vmbxieIgTBiHEEKsavE/view"}, 
+          {type:'Video', url: "https://www.youtube.com/watch?v=aJJvHpzP7V0"}
+        ]},
+        {title:'Program 2 : Subtraction of Two 16 bit Number', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1UH8ao7t58iIBFmgpFaMgVMIu1P-8MJvB/view"}, 
+          {type:'Video', url: "https://www.youtube.com/watch?v=Eh0F-V1lfe0"}
+        ]},
+        {title:'Program 3 : Multibyte Addition 8086', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1ktRWAP4woTNsOCeZrH6BpvTtmXbFPQaf/view"}, 
+          {type:'Video', url: "https://www.youtube.com/watch?v=pjPxL1s3Aa8"}
+        ]},
+        {title:'Program 4 : Multibyte Subtraction 8086', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1l8MVJg70WoCvK0w99gwvx90rb8jkT1rm/view"}, 
+          {type:'Video', url: "https://www.youtube.com/watch?v=Mnr3RU9Qbaw&t=17s"}
+        ]},
+        {title:'Program 5 : Sum of an Array 8086', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1YnV1lY6ZecpEOYxspRoho4KKTRx1Aa3z/view"}, 
+          {type:'Video', url: "https://www.youtube.com/watch?v=YbJD3ljluuo"}
+        ]},
+        {title:'Program 6 : Add Two Numbers of BCD Data', 
+        files: [
+          {type:'PDF', url: "https://drive.google.com/file/d/1hZ3hHcY9a5yZSSx-fxxXME82HbR8mEFG/view"}, 
+          {type:'Video', url: "https://www.youtube.com/watch?v=Ean05lg2TrI"}
+        ]},
+        {name:'Program 7 : Subtract Two Numbers of BCD Data', type:'PDF', url: "https://drive.google.com/file/d/18jPluE9gB5ty2Ljddi9ts951ikrQSqZs/view"},
+        {name:'Program 8 : Multiplication of Two 16 bit Data', type:'PDF', url: "https://drive.google.com/file/d/1juagxBVp09dDBslNqownWj2TNZrFHAUf/view"},
+        {name:'Program 9 : Divide 32 bit data by 16 bit data', type:'PDF', url: "https://drive.google.com/file/d/19xz5vQr9RK8_KSrlCqPikbOZ7GjvNid0/view"},
+      ]},
     ]
   },
   ec8252: {
-    icon:'⚡', title:'EC8252 – Electronics Devices',
-    desc:'Semiconductor physics, p-n junction diodes, transistors (BJT, FET), and optoelectronic devices.',
+    title: "EC8252 – Electronics Devices",
+    icon: "⚡",
+    desc: "Semiconductor physics, diodes, BJTs, FETs and optoelectronic devices.",
+    syllabus: "https://drive.google.com/file/d/1IHkRXhlHSP5Bb-q7H3_rTD26M1l9iNKY/view",
+    coursePlan: "https://drive.google.com/file/d/19kKtagU0ldsOKYYID4smNZ6-nBifUWQ5/view",
     units:[
-      { title:'Unit 1 – Semiconductor Physics', resources:[
-        {name:'Energy Bands & Charge Carriers', type:'PDF'},
-        {name:'Semiconductor Materials', type:'PDF'},
-        {name:'Assignment 1', type:'DOC'}
+      { title:'Unit - 1 Semiconductor Diode', resources:[
+        {name:'Notes', type:'PDF', url: "https://drive.google.com/file/d/1L4fFDNyuq_M9exUkbYR34KaV-Z2zXGwj/view"},
+        {name:'2 Marks with Answers', type:'PDF', url: "https://drive.google.com/file/d/1W9oIl4T9DLjBQxhSfRNHpT2yQ4PDeWX8/view"},
+        {name:'Assignment 1 Question', type:'PDF', url: "https://drive.google.com/file/d/1ihKi2V3hdB8osxrqw4zFg6CHLq121fAm/view"},
+        {name:'Answer Key', type:'PDF', url: "https://drive.google.com/file/d/1qnH3T_bPb5IVhBdGanP3NT_Ov-BBpEtR/view"},
+        {name:'Useful Link – PN Junction Diode Working', type:'Video', url: "https://www.youtube.com/watch?v=0yyFiJw5emw"},
+        {name:'NPTEL Video', type:'Video', url: "https://www.youtube.com/watch?v=L28F1Oenyds"},
+        {name:'Website', type:'Website Link', url: "https://www.electronics-tutorials.ws/diode/diode_3.html"},
       ]},
-      { title:'Unit 2 – p-n Junction Diode', resources:[
-        {name:'Diode Theory & V-I Characteristics', type:'PDF'},
-        {name:'Zener, Tunnel & Varactor Diodes', type:'PDF'},
-        {name:'Assignment 2', type:'DOC'}
+      { title:'Unit 2 – Bipolar Junction Transistor', resources:[
+        {name:'Notes', type:'PDF', url: "https://drive.google.com/file/d/1t5788RD30_PFMUIaxLdCyB_x_RC8d28F/view"},
+        {name:'2 Marks with Answers', type:'PDF', url: "https://drive.google.com/file/d/1xLz9WOoBXPqqNNa9v0jdvdKZfreDM7tz/view"},
+        {name:'Assignment 2 Question', type:'PDF', url: "https://drive.google.com/file/d/1eGod3CAPjoJO74RQHLlQPSCQnTETJS_3/view"},
+        {name:'Answer Key', type:'PDF', url: "https://drive.google.com/file/d/1nXqXtr6p_DdUL8OlpT-dnZTUnZEV-OgH/view"},
       ]},
-      { title:'Unit 3 – Bipolar Junction Transistor', resources:[
-        {name:'BJT Operation & Characteristics', type:'PDF'},
-        {name:'BJT Biasing & Amplifiers', type:'PDF'},
-        {name:'Assignment 3', type:'DOC'}
+      { title:'Unit 3 – Field Effect Transistors', resources:[
+        {name:'Notes', type:'PDF', url: "https://drive.google.com/file/d/1YzgxJmHeAPXC9LDgE8TRDq64PsPb_6Eb/view"},
+        {name:'2 Marks with Answers', type:'PDF', url: "https://drive.google.com/file/d/1kT2-0lDNPCNhMTQ7pgiSwlqpAYYMQSPA/view"},
+        {name:'Assignment 3 Question', type:'PDF', url: "https://drive.google.com/file/d/1kdYUWPozO3JYiVTnE-G0_tnuepOG81NB/view"},
+        {name:'Answer Key', type:'PDF', url: "https://drive.google.com/file/d/1CbSbePyUsxJAjoxaZr8VLDbarry88bLU/view"},
       ]},
-      { title:'Unit 4 – Field Effect Transistors', resources:[
-        {name:'JFET & MOSFET Characteristics', type:'PDF'},
-        {name:'FET Amplifiers & Biasing', type:'PDF'},
-        {name:'Assignment 4', type:'DOC'}
+      { title:'Unit 4 – Special Semiconductor Devices', resources:[
+        {name:'Notes', type:'PDF', url: "https://drive.google.com/file/d/14vwzlZR1m4fx8EagKxsWyCOTE7GZoQqY/view"},
+        {name:'2 Marks with Answers', type:'PDF', url: "https://drive.google.com/file/d/1V2HBdtbkJqtWJLDlYvoDN-z9MiVYCHpT/view"},
+        {name:'Assignment 4 Question', type:'PDF', url: "https://drive.google.com/file/d/1mgBIkPAmqznfOrZAh59T9zHTSu3PfzlA/view"},
       ]},
-      { title:'Unit 5 – Optoelectronic Devices', resources:[
-        {name:'LED, Photodiode & Solar Cell', type:'PDF'},
-        {name:'LDR, Phototransistor & Optocoupler', type:'PDF'},
-        {name:'Question Bank', type:'PDF'}
+      { title:'Unit 5 – Power Devices and Display Devices', resources:[
+        {name:'Notes', type:'PDF', url: "https://drive.google.com/file/d/1PlFB6VSuX9K8B-GRMzwZArEPFO9PcP8N/view"},
+        {name:'2 Marks with Answers', type:'PDF', url: "https://drive.google.com/file/d/1rrer-uA4jlY82cr5jnjAHrPMh-ZhPNBR/view"},
+        {name:'Assignment 5 Question', type:'PDF', url: "https://drive.google.com/file/d/1u-EqxgIDg5PkSVZKZhvUbVlGzceIRU7R/view"},
+      ]},
+      { title:'University Questions', resources:[
+        {name:'Electronic Devices April May 2014', type:'PDF', url: "https://drive.google.com/file/d/1VP5ybPCuWsTDLTPYMzzWF29IA2kf59wr/view"},
+        {name:'Electronic Devices Nov Dec 2014', type:'PDF', url: "https://drive.google.com/file/d/10PULai3v7Uhl2k22yJNV_zsttw31iEkv/view"},
+        {name:'Electronic Devices April May 2015', type:'PDF', url: "https://drive.google.com/file/d/1GoyXgGWKkwkW4NDVA9_EEOiNZ3IO-sWt/view"},
+        {name:'Electronic Devices Nov Dec 2015', type:'PDF', url: "https://drive.google.com/file/d/10YC-ecnTyI5RWLX1z4qMj8P2L5FU7V5i/view"},
+        {name:'Electronic Devices April May 2016', type:'PDF', url: "https://drive.google.com/file/d/1xBNojuKYc7w-7a6V5mxe_DmRPGksL3Re/view"},
+        {name:'Electronic Devices Nov Dec 2016', type:'PDF', url: "https://drive.google.com/file/d/1lUPqNcLCnWdudbCB_kJevfECecw2XaQE/view"},
+        {name:'Electronic Devices April May 2017', type:'PDF', url: "https://drive.google.com/file/d/1nZ4er3VObxaVUCXrhC1L9cDLhbATPbWI/view"},
+        {name:'Electronic Devices Nov Dec 2017', type:'PDF', url: "https://drive.google.com/file/d/11HRvJp9lQFMpbdQ_EB2h4OVCUPUB9yPA/view"}
+      ]},
+      { title:'Reference Books', resources:[
+        {name:'Semiconductor Physics and Devices, Donald A. Neamen, 3rd Edition', type:'PDF', url: "https://drive.google.com/file/d/1Fe8oSk_tRrUjykS4k3F0bkVdFcwPAL_F/view"},
+        {name:'Electronic Devices and Circuit Theory, Robert Boylestad, 7th Edition', type:'PDF', url: "https://drive.google.com/file/d/1-D-iW3ePo0upb_ORPc4oEY11ETa3_0IV/view"},
+      ]},
+      { title:'Additional Resources', resources:[
+        {name:'Pre Assessment Question', type:'PDF', url: "https://drive.google.com/file/d/1fpu_vGF-rudUmVW02HQtqICIlUMusqOM/view"},
+        {name:'Question Bank', type:'PDF', url: "https://drive.google.com/file/d/1mM4hNhMVaPakviLq2hIn0K1nIo4vaSUc/view"},
       ]}
     ]
-  },
-  ec8394: {
-    icon:'📡', title:'EC8394 – Analog and Digital Communication',
-    desc:'Amplitude, frequency, and phase modulation; digital modulation schemes; noise in communication systems.',
+},
+
+ec8394: {
+    title: "EC8394 – Analog and Digital Communication",
+    icon: "📡",
+    desc: "Study of analog and digital communication systems, modulation techniques, coding, and wireless communication.",
+    syllabus: "https://drive.google.com/file/d/1rqPGqpUjAzicKbz_tHnTB3QhEKpTVOc9/view",
+    coursePlan: "https://drive.google.com/file/d/1hsixyHsmrrkMX3uExTED_3u9ZZ4SXJFS/view",
     units:[
-      { title:'Unit 1 – Amplitude Modulation', resources:[
-        {name:'AM Principles & Spectrum', type:'PDF'},
-        {name:'AM Transmitters & Receivers', type:'PDF'},
-        {name:'Assignment 1', type:'DOC'}
+      { title:'Unit - 1 Analog Communication', resources:[
+        {name:'Introduction', type:'PDF', url: "https://drive.google.com/file/d/1JIZnqZaEFGntze8qQoYdlorW0TgcJyW4/view"},
+        {name:'Amplitude Modulation', type:'PDF', url: "https://drive.google.com/file/d/1eOIxh_WMogJb16XJksirVmlgIcE_gd7o/view"},
+        {name:'DSB SC & SSB', type:'PDF', url: "https://drive.google.com/file/d/1j0jpbPfL1SeCtc4Zx1ogovV7IOiWLPCR/view"},
+        {name:'VSB', type:'PDF', url: "https://drive.google.com/file/d/1Y3_jXwHEOQ8If4uXIW03bydhbK87GLMr/view"},
+        {name:'Amplitude Modulation Receiver (TRF & Superheterodyne Receiver)', type:'PDF', url: "https://drive.google.com/file/d/1AAp8FOiBwLvhM3EeHgT07IyWgKl2nKlN/view"},
+        {name:'Angle Modulation (Frequency and Phase Modulation)', type:'PDF', url: "https://drive.google.com/file/d/1TW9HJXXUk-y10TbI-C-A_Na9PAb0Patf/view"},
+        {name:'Generation and Frequency Analysis of Angle Modulation', type:'Website Link', url: "https://drive.google.com/file/d/1INq76aUhodh-OxF_mf4RivGAh8iXWazV/view"},
+        {name:'Differentiate between Different Modulation Techniques', type:'PDF', url: "https://drive.google.com/file/d/1ZgGjRwikiUP7MnZsFy6LDKISezqU2HwW/view"},
+        {name:'Assignment 1', type:'PDF', url: "https://drive.google.com/file/d/1HCblH86mlA5pXRQOmxRMLrkyCx8UE96C/view"},
+        {name:'Answer 1 Key', type:'PDF', url: "https://drive.google.com/file/d/1xvMyi-j_GNDs23QXTUE_0obOGXfoRfe2/view"},
+        {name:'2 Marks with Answers', type:'PDF', url: "https://drive.google.com/file/d/1ldqN9zDUdGsS6ONUxITmMCs6tpoYwwlu/view"},
       ]},
-      { title:'Unit 2 – Angle Modulation', resources:[
-        {name:'FM & PM Fundamentals', type:'PDF'},
-        {name:'FM Transmitters & Receivers', type:'PDF'},
-        {name:'Assignment 2', type:'DOC'}
+      { title:'Unit 2 – Pulse and Data Communication', resources:[
+        {name:'Pulse Width and Pulse Position Modulation', type:'PDF', url: "https://drive.google.com/file/d/1vRPT9F7eS85JJ2XhwrQ8iM9Wokw1waYl/view"},
+        {name:'Pulse Code Modulation', type:'PDF', url: "https://drive.google.com/file/d/1A5UeTtymxLs0xts1pi70pZhP9xhB0byx/view"},
+        {name:'Pulse and Digital Transmission', type:'PPT', url: "https://drive.google.com/file/d/1DTpQIYtiUdsiOBxG6-aPCzrdgU8yAbg6/view"},
+        {name:'Data Communication (History of Data Communication, Components of data communication system, Standard Organization for Data Communication, Data Communication Circuits)', type:'PDF', url: "https://drive.google.com/file/d/13G-XJABGwTHsR6hmDKJXZvkyLwEGbCin/view"},
+        {name:'Data Communication Codes', type:'PDF', url: "https://drive.google.com/file/d/1fYQwpTOLz21TFxNelwg3xJBCEYjQsXtp/view"},
+        {name:'Error Detection and Error Correction', type:'PDF', url: "https://drive.google.com/file/d/17YSA3c1dBGj2-plQKE2YLV3nhgSLOnTg/view"},
+        {name:'Assignment 2', type:'PDF', url: "https://drive.google.com/file/d/1r5hPR5JsBonpEu2wwMjK5fIgW77HAMQm/view"},
+        {name:'2 Marks with Answers', type:'PDF', url: "https://drive.google.com/file/d/1CEdc6qBEBDBsvEH18d-LBgvABQpoy-i6/view"},
       ]},
-      { title:'Unit 3 – Digital Communication Basics', resources:[
-        {name:'Pulse Modulation – PAM, PWM, PPM', type:'PDF'},
-        {name:'PCM & Delta Modulation', type:'PDF'},
-        {name:'Assignment 3', type:'DOC'}
+      { title:'Unit 3 – Digital Communication', resources:[
+        {name:'Introduction, ASK, 8-PSK, 16 QAM', type:'PDF', url: "https://drive.google.com/file/d/1c8uYVBbEFUjpGjHNaj8QP23Vfczz9NOF/view"},
+        {name:'FSK, BPSK, QPSK, 8 QAM', type:'PDF', url: "https://drive.google.com/file/d/1qg3hnfSNyP6dQ_pFnklq-BrLGPmvuMux/view"},
+        {name:'2 Marks with Answers', type:'PDF', url: "https://drive.google.com/file/d/1xjYiKZOYUzEvqYoaf0fMxBo0c52SVeTR/view"},
       ]},
-      { title:'Unit 4 – Digital Modulation', resources:[
-        {name:'ASK, FSK, PSK Techniques', type:'PDF'},
-        {name:'QAM & QPSK', type:'PDF'},
-        {name:'Assignment 4', type:'DOC'}
+      { title:'Unit 4 – Source and Error Control Coding', resources:[
+        {name:'Entropy, Shannon Fano, Huffman Code', type:'PDF', url: "https://drive.google.com/file/d/1RQvM5wDN7AWaMflpRAC2HYYT-jeePzN-/view"},
+        {name:'Mutual Information and Channel Capacity', type:'PDF', url: "https://drive.google.com/file/d/1kzZc517BPOa4qGHjJJOkffXze4aISAsh/view"},
+        {name:'Error Control Code (Linear Block Code)', type:'PDF', url: "https://drive.google.com/file/d/1siOEIdbTUPms-DTfkUUbGSjvzSD6wkpZ/view"},
+        {name:'Cyclic Code', type:'PDF', url: "https://drive.google.com/file/d/1vtK3BGJKMPyRaHTCDEuMJU_8YzIgxjq7/view"},
+        {name:'Linear Block Code and Cyclic Code Problem', type:'PDF', url: "https://drive.google.com/file/d/1lUjxdUGcj7O4FRDDbmMg3FOWIbV6_0K1/view"},
+        {name:'ARQ Techniques', type:'PDF', url: "https://drive.google.com/file/d/19gRIzQY7urJcv168EOzc_RN7ycEwq_8B/view"},
+        {name:'Assignment 4', type:'PDF', url: "https://drive.google.com/file/d/1uchI-Nf_5qFdIBjeqVzteeH8ygw05VL2/view"},
+        {name:'Answer 4 Key', type:'PDF', url: "https://drive.google.com/file/d/18I3WzK4c793a-cSwnVJMzjWyfv1H6vOT/view"},
+        {name:'2 Marks with Answers', type:'PDF', url: "https://drive.google.com/file/d/1mQPW-sz74qhlhv2PkWT4m4by21_xm1HO/view"},
       ]},
-      { title:'Unit 5 – Noise Analysis', resources:[
-        {name:'Noise in Communication Systems', type:'PDF'},
-        {name:'Figure of Merit & SNR Analysis', type:'PDF'},
-        {name:'Question Bank', type:'PDF'}
+      { title:'Unit 5 – Multiuser Radio Communication', resources:[
+        {name:'Global System for Mobile Communications (GSM)', type:'PDF', url: "https://drive.google.com/file/d/1cMaU5mg3ckZC88Y8HGntrUngFPCcmqjX/view"},
+        {name:'Cellular Concept (Frequency Reuse, Channel Assignment, Handover Techniques)', type:'PDF', url: "https://drive.google.com/file/d/1-0T54IonXIyHiVEsYTVaFBeJ36zRHPiO/view"},
+        {name:'Overview of Multiple Access Schemes & Code division multiple access (CDMA)', type:'PDF', url: "https://drive.google.com/file/d/1larPcqGBhnPYClwC-GSPodBnNhIjQiNc/view"},
+        {name:'Satellite Communication', type:'PDF', url: "https://drive.google.com/file/d/149XX1OKNEk8MTFmnGbMTVNTUvIJisVO9/view"},
+        {name:'Bluetooth', type:'PDF', url: "https://drive.google.com/file/d/1JB4gfJMUBZq6KaKRQTHiJFROhj3V1pLM/view"},
+        {name:'Assignment 5', type:'PDF', url: "https://drive.google.com/file/d/17uItGIR0aGobpCakExte4LEO9HK6ZYFS/view"},
+        {name:'Notes', type:'PDF', url: "https://drive.google.com/file/d/1hDaPRi6Yws8DB-vseaG85SSqxbBrg2bn/view"},
+      ]},
+      { title:'Question Bank', resources:[
+        {name:'Unit 1 – Analog Communication', type:'PDF', url: "https://drive.google.com/file/d/1JtA5ZCuQlmu6ZCDV7shMgCTtkk0eo8ir/view"},
+        {name:'Unit 2 – Pulse and Data Communication', type:'PDF', url: "https://drive.google.com/file/d/1WOxd7xcUbUyiVq0b0Eyo36X53cQd-QIf/view"},
+        {name:'Unit 3 – Digital Communication', type:'PDF', url: "https://drive.google.com/file/d/1-gTsxH4mrbnzVV1X7_JrVPcZCsYFTBRb/view"},
+        {name:'Unit 4 – Source and Error Control Coding', type:'PDF', url: "https://drive.google.com/file/d/1_BfAZs2f-IWrVZgsf5I0D4GGv0rCq6JL/view"},
+        {name:'Unit 5 – Multiuser Radio Communication', type:'PDF', url: "https://drive.google.com/file/d/1plAMzGi4DxHk8TlJ-Yuyg-Jjq_UIfOT8/view"}
+      ]},
+      { title:'University Questions', resources:[
+        {name:'ADC April May 15 R 08', type:'PDF', url: "https://drive.google.com/file/d/1sLP0OY4Ouxp3gI-aiHknKkv61kdJW7ue/view"},
+        {name:'ADC April May 15 R 13', type:'PDF', url: "https://drive.google.com/file/d/1Jgaaa6MVKSgeSjcx5dNosVmabpGnb3yQ/view"},
+        {name:'ADC April May 16 R 08', type:'PDF', url: "https://drive.google.com/file/d/1vUHTLVf-ODzIr253glIAmzero5S5L3be/view"},
+        {name:'ADC April May 16 R 13', type:'PDF', url: "https://drive.google.com/file/d/1eD9FmKV6xOm30NYSj_qZCeRgXAofn0Xn/view"},
+        {name:'ADC April May 17 R 08', type:'PDF', url: "https://drive.google.com/file/d/1yGTZHgitIY__syNaO24Y8XwMgwzw95Cs/view"},
+        {name:'ADC April May 17 R 13', type:'PDF', url: "https://drive.google.com/file/d/1kXpmDz9rfuu6UILRjOSbi3z6_2USoRkm/view"},
+        {name:'ADC April May 18 R 08', type:'PDF', url: "https://drive.google.com/file/d/1A37b2SaOnHKmBpKETIAhzl5FZTkGLOgL/view"},
+        {name:'ADC April May 18 R 13', type:'PDF', url: "https://drive.google.com/file/d/1pKgUnJxd9-zGm2ZDb_TkQaMP6a4zcRFJ/view"},
+        {name:'ADC April May 19 R 13', type:'PDF', url: "https://drive.google.com/file/d/1dE0TWr8eULZ7nCyonBTgUQFLFUKXfVV6/view"},
+        {name:'ADC April May 19 R 17', type:'PDF', url: "https://drive.google.com/file/d/1EiaV3VQgRqFA_PCbpRfLFpnCS_C1j_ga/view"},
+        {name:'ADC Nov Dec 14 R 08', type:'PDF', url: "https://drive.google.com/file/d/1WWoPDs2V7dnMGg_K9e_pvRJRcpzSLIit/view"},
+        {name:'ADC Nov Dec 14 R 13', type:'PDF', url: "https://drive.google.com/file/d/1sWaxiW7IP8J_nFwpBwFDQli8wA_9niCf/view"},
+        {name:'ADC Nov Dec 15 R 08', type:'PDF', url: "https://drive.google.com/file/d/1LhP7x1OX0uYDDdjtzOyHijihEwGbphz3/view"},
+        {name:'ADC Nov Dec 15 R 13', type:'PDF', url: "https://drive.google.com/file/d/1R7XsQFMAOPuuoJUKaKHOzJd7bYKWbosq/view"},
+        {name:'ADC Nov Dec 16 R 08', type:'PDF', url: "https://drive.google.com/file/d/1NXiIKQ9s_b9oPr93wcqKAa-ZsjkMpCWC/view"},
+        {name:'ADC Nov Dec 16 R 13', type:'PDF', url: "https://drive.google.com/file/d/1indf6Vtp3fZ0swM1_tWF0jBKNxRui5qB/view"},
+        {name:'ADC Nov Dec 17 R 08', type:'PDF', url: "https://drive.google.com/file/d/17vhufoCt0xwnqCVaCHsr1FfzbwaIdi33/view"},
+        {name:'ADC Nov Dec 17 R 13', type:'PDF', url: "https://drive.google.com/file/d/1IKRI1qCenzk03KozQ_yF7uMJYh-rOZOj/view"},
+        {name:'ADC Nov Dec 18 R 13', type:'PDF', url: "https://drive.google.com/file/d/1D_6GGKjV6mWXBBnZbRtr2hKpLeFtA59i/view"},
+        {name:'ADC Nov Dec 18 R 17', type:'PDF', url: "https://drive.google.com/file/d/1mKqNM9AVWZRUjHoLytR-ZEwSLREhz-0B/view"},
+      ]},
+      { title:'Additional Resources', resources:[
+        {name:'Pre Assessment Test', type:'Form', url: "https://forms.office.com/Pages/ResponsePage.aspx?id=GdlmJvzxJ0C5xSEtTpXmikh7ewiOnj9MmrIhehuKHS9UM1VSWkRCNU1LMVNVR005SFNUSUhCOTdMUC4u"},
       ]}
     ]
-  },
+},
   cs8351: {
     icon:'🔢', title:'CS8351 – Digital Principles & System Design',
     desc:'Boolean algebra, logic minimization, combinational & sequential circuits, PLDs, and memory systems.',
